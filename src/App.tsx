@@ -11,7 +11,7 @@ const App: React.FC = () => {
     const buttonName: string = event.currentTarget.innerText;
     if (buttonName === "AC") setDisplayValue("0");
     else if (buttonName === "=") {
-      const replacedValue = displayValue.replace("x", "*").replace("÷", "/");
+      const replacedValue = displayValue.replace("x", "*").replace("÷", "/").replace("+/-", "*(-1)");
       console.log(replacedValue);
       const value: number = evaluate(replacedValue);
       setDisplayValue(value.toString());
