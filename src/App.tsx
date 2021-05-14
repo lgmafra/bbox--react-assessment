@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { evaluate } from "mathjs";
-import ButtonsPanel from "@components/buttonPanel/ButtonPanel";
-import Display from "@components/display/Display";
+import ButtonsPanel from "@component/buttonPanel/ButtonPanel";
+import Display from "@component/display/Display";
 import "./App.css";
 
 const App: React.FC = () => {
